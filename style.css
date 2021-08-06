@@ -86,3 +86,12 @@ ol.bul-num > li:before { display:inline; content:counter(list-number)". "; }
 figcaption { margin-top:15px; display:block; }
 
 .box-base { display:inline-block; background:#eee; border-radius:5px; padding:15px; margin:10px 0; }
+
+
+@media print {
+    body { background:none; }
+    .content { padding:0; }
+    .refer-area { background:none; border:1px dashed #888; }
+    .img img { box-shadow:none; border:1px solid #888; }
+    .img-mo { width:200px !important; }
+}

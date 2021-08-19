@@ -77,11 +77,11 @@ ol.bul-num { counter-reset:list-number; }
 ol.bul-num > li { counter-increment:list-number; }
 ol.bul-num > li:before { display:inline; content:counter(list-number)". "; }
 
-.img { display:inline-block; margin:10px 0; }
+.img { display:inline-block; margin:10px 0; vertical-align:bottom; }
 .img img { border:1px solid #eee; box-shadow:0 0 7px rgba(96,88,80,.2); }
 .img + .bul-dot { margin-top:20px; }
 
-.refer-area { display:inline-block; position:relative; padding:25px 25px 20px; margin:20px 0; background:rgba(255,188,0,.4); color:rgb(84,80,69); }
+.refer-area { display:inline-block; position:relative; padding:25px 25px 20px; margin:20px 0; background:rgba(255,188,0,.4); color:rgb(84,80,69); vertical-align:bottom; }
 .refer-area:before { position:absolute; top:0; left:0; display:inline-block; padding:0 5px; background:rgb(84,80,69); color:#fff; font-size:12px; border-radius:3px; content:"reference"; margin-bottom:10px; }
 figcaption { margin-top:15px; display:block; }
 
@@ -100,6 +100,7 @@ figcaption { margin-top:15px; display:block; }
 }
 
 @media print {
+    @page { size:auto; margin:10px; }
     body { background:none; }
     .content { padding:0; }
     .refer-area { background:none; border:1px dashed #888; }

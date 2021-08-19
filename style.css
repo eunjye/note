@@ -106,5 +106,5 @@ figcaption { margin-top:15px; display:block; }
     .refer-area { background:none; border:1px dashed #888; }
     .img img { box-shadow:none; border:1px solid #888; }
     .img-mo { width:200px !important; }
-    img { scale:0.7; }
+    img { zoom:0.7; }
 }
